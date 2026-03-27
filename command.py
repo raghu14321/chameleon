@@ -2,6 +2,7 @@ import subprocess
 import os
 import time
 subprocess.call("sudo apt install apache2",shell=True)
+subprocess.call("sudo service apache2 start",shell=True)
 root = subprocess.check_output("whoami",shell=True)
 root1 = str(root)
 root2 = (root1[2:-3])
